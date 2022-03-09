@@ -1,0 +1,12 @@
+{
+  "name": "css-cascade-layers",
+  "version": "0.0.0",
+  "author": "nus3 <hadayota33@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "reload -b -d src -p 8081"
+  },
+  "dependencies": {
+    "reload": "^3.2.0"
+  }
+}
