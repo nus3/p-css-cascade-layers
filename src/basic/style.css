@@ -1,0 +1,74 @@
+@layer base, page, utilities;
+/* @layer utilities, page, base; */
+
+@layer base {
+  .base-cascade {
+    color: white;
+    padding: 10px;
+    background-color: crimson;
+  }
+
+  .base-cascade.base-nus3-cascade {
+    background-color: royalblue;
+  }
+}
+
+@layer page {
+  #btn-cascade {
+    background-color: crimson;
+  }
+}
+
+@layer utilities {
+  button {
+    background-color: coral;
+  }
+}
+
+.container {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin: 0;
+}
+
+/* ------ 同じ詳細度の場合、最後のクラスが反映される ------ */
+
+.base {
+  color: white;
+  padding: 10px;
+  background-color: crimson;
+}
+
+.base-nus3 {
+  background-color: white;
+}
+
+.base {
+  background-color: royalblue;
+}
+
+/* ------ セレクタの詳細度は ID > Class > 要素 である ------ */
+
+#btn {
+  background-color: crimson;
+}
+
+.nus3 {
+  background-color: black;
+}
+
+button {
+  background-color: coral;
+}
