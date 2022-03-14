@@ -4,7 +4,7 @@
   "author": "nus3 <hadayota33@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "reload -b -d src -p 8081"
+    "dev": "reload -b -d src -p 8081"
   },
   "dependencies": {
     "reload": "^3.2.0"
