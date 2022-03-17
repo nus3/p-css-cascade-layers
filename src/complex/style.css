@@ -1,0 +1,11 @@
+@layer base, page;
+
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css' layer(base);
+@import 'styles/page.css' layer(page);
+
+/* @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
+@import 'styles/page.css'; */
+
+button {
+  background-color: gold;
+}

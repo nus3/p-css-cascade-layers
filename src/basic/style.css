@@ -1,15 +1,17 @@
+.test {
+  background-color: red;
+}
+
 @layer base, page, utilities;
 /* @layer utilities, page, base; */
 
 @layer base {
   .base-cascade {
-    color: white;
-    padding: 10px;
     background-color: crimson;
   }
 
-  .base-cascade.base-nus3-cascade {
-    background-color: royalblue;
+  .nus3-cascade {
+    background-color: white;
   }
 }
 
@@ -21,7 +23,7 @@
 
 @layer utilities {
   button {
-    background-color: coral;
+    background-color: gold;
   }
 }
 
@@ -41,17 +43,16 @@
 
 .title {
   margin: 0;
+  font-size: 24px;
 }
 
 /* ------ 同じ詳細度の場合、最後のクラスが反映される ------ */
 
 .base {
-  color: white;
-  padding: 10px;
   background-color: crimson;
 }
 
-.base-nus3 {
+.nus3 {
   background-color: white;
 }
 
@@ -65,10 +66,6 @@
   background-color: crimson;
 }
 
-.nus3 {
+.nus1 {
   background-color: black;
-}
-
-button {
-  background-color: coral;
 }

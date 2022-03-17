@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-nus3 {
+  background-color: aquamarine;
+  color: red;
+}
